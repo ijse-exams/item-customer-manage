@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--&lt;!&ndash;-->
+<!--  ~ /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--  ~  *  Copyright (c) IJSE-exams. All rights reserved.-->
+<!--  ~  *  Licensed under the MIT License. See License.txt in the project root for license information.-->
+<!--  ~  *&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/-->
+<!--  &ndash;&gt;-->
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.CustomerFormController">
+   <children>
+      <JFXTextField fx:id="txtCusName" layoutX="105.0" layoutY="89.0" prefHeight="25.0" prefWidth="350.0"
+                    promptText="Customer Name"/>
+      <JFXTextField fx:id="txtCusAddress" layoutX="105.0" layoutY="136.0" prefHeight="25.0" prefWidth="350.0"
+                    promptText="Customer Address"/>
+      <JFXTextField fx:id="txtTelephoneNumber" layoutX="105.0" layoutY="188.0" prefHeight="25.0" prefWidth="350.0"
+                    promptText="Telephone Number"/>
+      <JFXTextField fx:id="txtEmail" layoutX="105.0" layoutY="234.0" prefHeight="25.0" prefWidth="350.0"
+                    promptText="Email"/>
+      <JFXButton layoutX="333.0" layoutY="290.0" onAction="#btnCreate" text="Create"/>
+      <JFXButton layoutX="400.0" layoutY="290.0" onAction="#btnCancel" text="Cancel"/>
+   </children>
+</AnchorPane>
