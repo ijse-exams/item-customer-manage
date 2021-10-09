@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--&lt;!&ndash;-->
+<!--  ~ /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--  ~  *  Copyright (c) IJSE-exams. All rights reserved.-->
+<!--  ~  *  Licensed under the MIT License. See License.txt in the project root for license information.-->
+<!--  ~  *&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/-->
+<!--  &ndash;&gt;-->
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.ItemFormController">
+   <children>
+      <JFXTextField fx:id="txtItemName" layoutX="105.0" layoutY="89.0" prefHeight="25.0" prefWidth="350.0"
+                    promptText="Item Name"/>
+      <JFXTextField fx:id="txtItemQty" layoutX="105.0" layoutY="136.0" prefHeight="25.0" prefWidth="350.0"
+                    promptText="Item Qty"/>
+      <JFXTextField fx:id="txtPrice" layoutX="105.0" layoutY="188.0" prefHeight="25.0" prefWidth="350.0"
+                    promptText="Price"/>
+      <JFXButton layoutX="336.0" layoutY="254.0" onAction="#btnCreate" text="Create"/>
+      <JFXButton layoutX="403.0" layoutY="254.0" onAction="#btnCancel" text="Cancel"/>
+   </children>
+</AnchorPane>

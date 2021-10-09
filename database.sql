@@ -18,8 +18,19 @@ CREATE TABLE customer
     Email           VARCHAR(320)
 );
 
+CREATE TABLE item
+(
+    itemID   int PRIMARY KEY AUTO_INCREMENT,
+    ItemName VARCHAR(200) NOT NULL,
+    ItemQty  VARCHAR(200) NOT NULL,
+    Price    VARCHAR(200) NOT NULL
+);
+
 insert into customer(CusName, CusAddress, TelephoneNumber, Email)
-VALUES ("thilina", "thuduwawa", "56846546844", "thilina@gamail.com")
+VALUES ("thilina", "thuduwawa", "56846546844", "thilina@gamail.com");
+
+insert into item(ItemName, ItemQty, Price)
+VALUES ("parippu", "50", "5000");
 
 select *
 from customer;

@@ -12,6 +12,7 @@ package bo;
  */
 
 import bo.custom.impl.ManageCustomerBOImpl;
+import bo.custom.impl.ManageItemBOImpl;
 
 public class BOFactory {
     static BOFactory boFactory;
@@ -27,6 +28,8 @@ public class BOFactory {
         switch (boType) {
             case ManageCustomerBOImpl:
                 return new ManageCustomerBOImpl();
+            case ManageItemBOImpl:
+                return new ManageItemBOImpl();
             default:
                 return null;
         }
@@ -34,5 +37,6 @@ public class BOFactory {
 
     public enum BoType {
         ManageCustomerBOImpl,
+        ManageItemBOImpl,
     }
 }
